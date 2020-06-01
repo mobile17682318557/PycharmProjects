@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tools</title>
+    <script src="{{url_for('static', filename='jquery-3.4.1.min.js')}}"></script>
+
+
+</head>
+<body>
+<button class="decode">url解码</button>
+<button class="decode" >111</button>
+<button class="decode">222</button>
+<script type=text/javascript>
+        $('.decode').click(function(){
+            window.location.href='/tools/'+$(this).text();
+        })
+    </script>
+</body>
+</html>
